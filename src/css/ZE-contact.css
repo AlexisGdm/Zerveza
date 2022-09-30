@@ -1,0 +1,37 @@
+.contact{
+    color: white;
+    margin: auto;
+    margin-top: 60px;
+    width: 260px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    background-color: rgba(218, 165, 32, 0.8);
+    font-size: x-large;
+}
+h3 {
+    text-align: center;
+}
+form input, form textarea{
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    width: 250px;
+    font-family: "Comic Sans MS", arial;
+    font-size: 16px;
+}
+form input[type="submit"] {
+    text-align: center;
+    width: auto;
+    padding: 0px 10px 0px 10px;
+}
+.envoyer{
+    width: 120px;
+    height: 40px;
+    font-size: x-large;
+}
+@media screen and (max-width: 600px) {   
+    .contact {width: 260px;}
+}
+@media screen and (min-width: 601px) and (max-width: 900px) { 
+    .contact {width: 260px;} 
+}

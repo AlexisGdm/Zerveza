@@ -1,0 +1,85 @@
+.titre{
+    margin-top: 30px;
+}
+.titre_horaires{
+    font-size: xx-large;
+    text-align: center;
+}
+.horaires{
+    font-size: medium;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(197,90,17,0.8);
+    border-radius: 20px;
+    color: white;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+
+}
+.B {
+    transform: translate(23px, 20px) rotate(-35deg);
+}
+.a1 {
+    transform: translate(13px, -5px) rotate(-25deg);
+}
+.r1 {
+    transform: translate(6px, -20px) rotate(-20deg);
+}
+.esp1 {
+    transform: translate(3px, -32px) rotate(-15deg);
+    visibility: hidden;
+}
+.a2{
+    transform: translate(4px, -32px) rotate(-5deg);
+}
+.esp2 {
+    transform: translate(1px, -40px) rotate(-5deg);
+    visibility: hidden;
+}
+.b {
+    transform: translate(0px, -30px) rotate(3deg);
+}
+.i {
+    transform: translate(-1px, -25px) rotate(6deg);
+}
+.e1 {
+    transform: translate(-2px, -20px) rotate(5deg);
+}
+.r2 {
+    transform: translate(-3px, -23px) rotate(-2deg);
+}
+.e2 {
+    transform: translate(-6px, -30px) rotate(-15deg);
+}
+.s {
+    transform: translate(-8px, -40px) rotate(-20deg);
+}
+.titre span {
+    display: inline-block;
+    color: goldenrod;
+    font-size: 65px;
+}
+.texte{
+    color: white;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;    
+    font-size: large;
+    text-align: justify;
+    background-color: rgba(218, 165, 32, 0.8);
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+}
+@media screen and (max-width: 600px) {
+    .texte {width: 70%;font-size: medium;}
+    .titre span{font-size: 30px}
+    .titre_horaires{font-size: large;}
+    .horaires{font-size: x-small; height: 300px;}
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .texte{width: 70%; font-size: medium;}
+    .titre span{font-size: 50px}
+    .titre_horaires{font-size: x-large;}
+    .horaires{font-size: small; height: 360px;}
+}

@@ -1,0 +1,41 @@
+
+.image{
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.logo{
+    width: 100px;
+    margin: auto;
+}
+.trouver{
+    color: white;
+    text-align: center;
+    width: 420px;
+    height: 320px;
+    margin: auto;
+    background-color: rgba(218, 165, 32, 0.8);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+   font-size: large;
+}
+h3{
+    font-size: xx-large;
+}
+.ville{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.carte{
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .trouver{width: 300px; height: 300px; font-size: medium;}  
+    iframe{width: 330px; height: 330px;}
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .trouver{width: 300px; height: 300px; font-size: medium;}  
+    iframe{width: 380px; height: 330px;}
+}
