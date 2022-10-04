@@ -29,7 +29,6 @@
       </div>
     </div>
   </div>
-
 </div>
 <div class="overlay-verify"></div>
 </div>

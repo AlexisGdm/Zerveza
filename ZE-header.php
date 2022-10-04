@@ -32,5 +32,11 @@
     </div>
 
 </nav>
+<?php
+if (isset($_SESSION['LOGIN_ADMIN'])) {
+    echo 'Tu es ' . $_SESSION['LOGIN_ADMIN'] . ' <br>';
+}
+session_destroy();
+?>
 <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
 <script src="./src/js/main_header_a.js"></script>

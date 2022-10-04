@@ -1,5 +1,5 @@
 <?php
-include("html.html");
+include("html.php");
 ?>
 <link rel="stylesheet" href="./src/css/ZE-trouver.css" />
 <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />

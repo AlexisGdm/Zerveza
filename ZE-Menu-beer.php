@@ -1,5 +1,5 @@
 <?php
-include("html.html");
+include("html.php");
 ?>
 <script src="./src/js/menu.js"></script>
 <?php
@@ -32,9 +32,9 @@ require_once "src/config/database.php";
             <table>
                 <tbody>
                     <tr>
-                        <td class="img_biere" ><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
-                        <td class="nom_biere" ><?= $biere->NOM_BIERE ?></td>
-                        </tr>
+                        <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
+                        <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
+                    </tr>
                     <tr>
                         <td class="desc_biere" colspan="2"><?= $biere->DESC_BIERE ?></td>
                 </tbody>
@@ -55,8 +55,8 @@ require_once "src/config/database.php";
         ?>
             <table>
                 <tbody>
-                        <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
-                        <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
+                    <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
+                    <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
                     </tr>
                     <tr>
                         <td class="desc_biere" colspan="2"><?= $biere->DESC_BIERE ?></td>
@@ -79,8 +79,8 @@ require_once "src/config/database.php";
         ?>
             <table>
                 <tbody>
-                        <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
-                        <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
+                    <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
+                    <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
                     </tr>
                     <tr>
                         <td class="desc_biere" colspan="2"><?= $biere->DESC_BIERE ?></td>
@@ -103,8 +103,8 @@ require_once "src/config/database.php";
         ?>
             <table>
                 <tbody>
-                        <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
-                        <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
+                    <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
+                    <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
                     </tr>
                     <tr>
                         <td class="desc_biere" colspan="2"><?= $biere->DESC_BIERE ?></td>
@@ -127,8 +127,8 @@ require_once "src/config/database.php";
         ?>
             <table>
                 <tbody>
-                        <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
-                        <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
+                    <td class="img_biere"><img src="src/img/biere/<?= $biere->PHOTO_BIERE ?>" alt="Affiche de la biere<?= $biere->NOM_BIERE ?>"></td>
+                    <td class="nom_biere"><?= $biere->NOM_BIERE ?></td>
                     </tr>
                     <tr>
                         <td class="desc_biere" colspan="2"><?= $biere->DESC_BIERE ?></td>

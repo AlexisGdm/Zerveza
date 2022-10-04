@@ -1,5 +1,5 @@
 <?php
-include("html.html");
+include("html.php");
 include("ZE-header.php");
 ?>
 
