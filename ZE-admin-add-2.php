@@ -1,6 +1,9 @@
 <?php
 require_once "src/config/config.php";
 require_once "src/config/database.php";
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
 $NOM_BIERE = $_POST['NOM_BIERE'];
 $TYPE_BIERE = $_POST['choix'];
 $DESC_BIERE = $_POST['Message'];

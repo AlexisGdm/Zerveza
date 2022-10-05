@@ -2,6 +2,9 @@
 require_once "src/config/config.php";
 require_once "src/config/database.php";
 $db = connectDb();
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
 $sqlRequest = 'SELECT DISTINCT TYPE_BIERE FROM biere';
 $sqlResponse = $db->prepare($sqlRequest);
 $sqlResponse->execute();
@@ -21,7 +24,7 @@ include("html.php");
 include('ZE-header-admin.php');
 ?>
 
-<div class="remove-biere">
+<div class="remove-biere mb-3">
     <h4>Supression d'une bière, sacrilège!</h4>
 </div>
 <div class="remove-biere">
@@ -29,7 +32,7 @@ include('ZE-header-admin.php');
 
         <!-- SELECT TYPE -->
         <div class="mb-3">
-            <label for="genreselect" class="form-label">Selectionne un type</label>
+            <label for="genreselect" class="form-labeladmin">Selectionne un type </label>
             <select onchange="this.form.submit()" class="form-select" id="choix" name="choix">
 
                 <?php
@@ -48,7 +51,7 @@ include('ZE-header-admin.php');
     <!-- SELECT BIERE -->
     <form method="POST" action="ZE-admin-remove-2.php">
         <div class="mb-3">
-            <label for="genreselect2" class="form-label">Selectionne une bière</label>
+            <label for="genreselect2" class="form-labeladmin">Selectionne une bière</label>
             <select class="form-select" id="choix2" name="choix2">
                 <?php
                 foreach ($results2 as $catBiere2) {

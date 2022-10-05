@@ -3,6 +3,9 @@ require_once "src/config/config.php";
 require_once "src/config/database.php";
 $id_resa = '';
 $db = connectDb();
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
 if (isset($_POST["idresa"]) || ($_POST["idresa"] != "")) {
     $id_resa = $_POST["idresa"];
 } else {

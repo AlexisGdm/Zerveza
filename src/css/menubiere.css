@@ -6,7 +6,7 @@ body{
 }
 td {
     
-    border-radius: 15px;
+    border-radius: 1px;
     font-size: small;
 }
 .nom_biere{
@@ -20,10 +20,10 @@ td {
 }
 table {
     border: 1px solid #333;
-    border-radius: 15px;
+    border-radius: 1px;
     font-size: small;
     display: inline-flex;
-    border-radius: 10px;
+    border-radius: 1px;
     color:white;
     margin-bottom:2em;
     width: 19%;

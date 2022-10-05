@@ -2,17 +2,19 @@
 require_once "src/config/config.php";
 require_once "src/config/database.php";
 $db = connectDb();
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
 $sqlRequest = 'SELECT * FROM Reservation ';
 $sqlResponse = $db->prepare($sqlRequest);
 $sqlResponse->execute();
 $results = $sqlResponse->fetchAll(PDO::FETCH_OBJ);
 $db = disconnectDb();
 include("html.php");
-?>
-<?php
 include('ZE-header-admin.php');
 ?>
-<div class="show-resa-titre">
+
+<div class="show-resa">
     <h4>Voici la liste des réservation en cours !</h4>
 </div>
 <div class="show-resa">
@@ -39,6 +41,8 @@ include('ZE-header-admin.php');
         </div>
     </form>
 </div>
+
+
 <?php
 include 'ZE-footer.php';
 ?>

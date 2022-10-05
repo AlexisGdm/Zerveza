@@ -1,0 +1,14 @@
+.add-biere, .show-resa, .mb-3, .connectadmin  {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form-labeladmin{
+    padding-right: 20px;
+}
+
+li{
+    list-style-type: none;
+}

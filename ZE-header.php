@@ -3,21 +3,7 @@
     <div class="logoheader">
         <h4><a href="ZE-accueil.php"><img class="logoimg" src="src\img\icon\logo.png" alt="logo"></a></h4>
     </div>
-    <div id="sous-Admin" style="display:none;">
-        <form method="post" action="ZE-admin.php">
-            <div class="mb-3">
-                <label for="inputLogin" class="form-label">Login :</label>
-                <input type="text" class="form-control col" id="inputLogin" name="login">
-            </div>
-            <div class="mb-3">
-                <label for="inputPassword" class="form-label">Password :</label>
-                <input type="password" class="form-control" id="inputPassword" name="password">
-            </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Entrer</button>
-            </div>
-        </form>
-    </div>
+
     <ul class="nav-links">
         <a id="laccueil" href="ZE-accueil.php">Accueil</a>
         <a id="lmenu" href="ZE-Menu-beer.php">Menu</a>
@@ -32,11 +18,5 @@
     </div>
 
 </nav>
-<?php
-if (isset($_SESSION['LOGIN_ADMIN'])) {
-    echo 'Tu es ' . $_SESSION['LOGIN_ADMIN'] . ' <br>';
-}
-session_destroy();
-?>
 <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
 <script src="./src/js/main_header_a.js"></script>

@@ -1,7 +1,6 @@
 <?php
 session_start();
 $_SESSION['LOGIN_ADMIN'] = 'admin';
-
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +17,7 @@ $_SESSION['LOGIN_ADMIN'] = 'admin';
     <link rel="stylesheet" href="./src/css/ZE-footer.css" />
     <link rel="stylesheet" href="./src/css/ZE-header.css" />
     <link rel="stylesheet" href="./src/css/ZE-mentionslegales.css" />
+    <link rel="stylesheet" href="./src/css/ZE-admin.css" />
     <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 </head>

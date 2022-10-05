@@ -2,6 +2,9 @@
 require_once "src/config/config.php";
 require_once "src/config/database.php";
 $db = connectDb();
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
 $ID_BIERE = "";
 if (isset($_POST["choix2"]) || ($_POST["choix2"] != "")) {
     $ID_BIERE = $_POST["choix2"];

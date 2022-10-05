@@ -25,7 +25,7 @@ $results = $sql->fetch();
 if ($results) {
     include('ZE-header-admin.php');
 ?>
-    <div class="mb-3">
+    <div class="connectadmin">
         <p>Les Coordonnées admin saisi sont correct</p>
     </div>
 <?php
@@ -34,8 +34,11 @@ if (!$results) {
     include('ZE-header.php');
     header("refresh:3;url=ZE-Accueil.php");
 ?>
-    <div class="mb-3">
+    <div class="connectadmin">
         <p>Attention : Les Coordonnées admin saisi sont érronées</p>
+    </div>
+    <div class="connectadmin">
+        <p>Redirection vers l'acceuil en cours...</p>
     </div>
 <?php
 }

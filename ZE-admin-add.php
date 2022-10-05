@@ -1,7 +1,14 @@
 <?php
 require_once "src/config/config.php";
 require_once "src/config/database.php";
+
+
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
+
 $db = connectDb();
+
 $sqlRequest = 'SELECT DISTINCT TYPE_BIERE FROM biere ';
 $sqlResponse = $db->prepare($sqlRequest);
 $sqlResponse->execute();

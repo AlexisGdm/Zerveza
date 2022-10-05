@@ -3,6 +3,9 @@ require_once "src/config/config.php";
 require_once "src/config/database.php";
 $id_resa = '';
 $db = connectDb();
+require("SimpleAuth.php");
+$login = new Login;
+$login->authorize();
 if (isset($_GET['id_resa'])) {
     $id_resa = $_GET['id_resa'];
     $db = connectDb();

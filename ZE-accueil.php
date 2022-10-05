@@ -5,10 +5,11 @@ include("html.php");
 <link href="https://fr.allfont.net/allfont.css?fonts=comic-sans-ms" rel="stylesheet" type="text/css" />
 <?php
 include('ZE-header.php');
-
 ?>
 <main>
     <div class="Accueil">
+        <a href="ZE-admin.php" style="background-color: black;">Page admin</a> <br>
+        <a href="ZE-admin-add.php" style="background-color: black;">Page admin : ajouter biere</a>
         <div class="titre" style="text-align: center; padding-top: 10px; font-size: 80px;">
             <span class="B">B</span>
             <span class="a1">a</span>
