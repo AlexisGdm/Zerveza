@@ -1,8 +1,3 @@
-<?php
-session_start();
-$_SESSION['LOGIN_ADMIN'] = 'admin';
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 

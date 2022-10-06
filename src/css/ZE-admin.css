@@ -1,5 +1,5 @@
 .add-biere, .show-resa, .mb-3, .connectadmin  {
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -11,4 +11,9 @@
 
 li{
     list-style-type: none;
+}
+
+.adminformu p{
+    color: black;
+    text-align: center;
 }

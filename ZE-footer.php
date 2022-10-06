@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./src/css/ZE-footer.css" />
 <link rel="stylesheet" type="text/css" href="ZE-popup1.css">
-<div class="loginPopup">
+<!-- <div class="loginPopup">
   <div id="popupForm" class="formPopup">
     <form method="post" action="ZE-admin.php" class="formContainer">
       <h2 id="admintitle">Administrateur <br></h2>
@@ -14,13 +14,14 @@
       <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
     </form>
   </div>
-</div>
+</div> -->
+<div class="clear"></div>
 <div class="footer">
   <div class="footermentions pres mobfoot">
     <a href="ZE-mentionslegales.php">Mentions légales</a>
   </div>
   <div class="sante pres mobfoot">
-    <p>L'abus d'alcool est <span onclick="openForm()">dangereux</span> pour la santé.</p>
+    <p>L'abus d'alcool est <span onclick="window.location='ZE-admin.php';">dangereux</span> pour la santé.</p>
   </div>
   <div class="iconres pres">
     <a href=""><img class="iconr" src="src\img\icon\facebook-512.webp" alt="facebook"></a>

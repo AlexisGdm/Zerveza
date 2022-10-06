@@ -6,10 +6,9 @@ include("html.php");
 <?php
 include('ZE-header.php');
 ?>
-<main>
-    <div class="Accueil">
-        <a href="ZE-admin.php" style="background-color: black;">Page admin</a> <br>
-        <a href="ZE-admin-add.php" style="background-color: black;">Page admin : ajouter biere</a>
+
+<div class="containerPageAcc">
+    <div class="titreBarabiere">
         <div class="titre" style="text-align: center; padding-top: 10px; font-size: 80px;">
             <span class="B">B</span>
             <span class="a1">a</span>
@@ -24,26 +23,38 @@ include('ZE-header.php');
             <span class="e2">e</span>
             <span class="s">s</span>
         </div>
-        <br>
-        <br>
-        <div class="horaires">
-            <h1 class="titre_horaires">Horaires</h1>
-            <br />
-            <pre>
-            <h3>      Lundi :          Fermé</h3>
-            <h3>      Mardi :      10h00 - 22h00</h3>
-            <h3>      Mercredi :   10h00 - 22h00</h3>
-            <h3>      Jeudi :      10h00 - 22h00</h3>
-            <h3>      Vendredi :   14h00 - 02h00</h3>
-            <h3>      Samedi :     14h00 - 02h00</h3>
-            <h3>      Dimanche :   14h00 - 22h00</h3>
-            </pre>
-        </div>
+    </div>
+    <div class="photoDebar">
+        <img src="src\img\background\bg3.jpg" alt="img">
+    </div>
+    <div class="photoResume">
+        <img src="src\img\background\shutterstock_113954089-beer.jpg" alt="">
+    </div>
+    <div class="resumeBar">
         <div class="texte">
             <p>Zerveza, c'est l'histoire de rencontre entre passionnés de bonnes mousses. Au service de nos clients, les chopistes, nous nous occupons de dénicher, pour vous, les bières qui vous plairont, avec pour objectif de vous les proposer au meilleur prix. Zerveza, c'est aussi un décor, une ambiance et de la qualité. Nos équipes s'engagent à ce que les bières soient toujours servies à la température idéale, pour que vous en profitiez dans un cadre unique qui fait l'essence de l'ambiance Zerveza.</p>
         </div>
     </div>
-</main>
+    <div class="horaireDuBar">
+        <div class="horaires">
+            <h1 class="titre_horaires">Horaires</h1>
+            <br />
+            <pre><p> 
+        <p>           Lundi :          Fermé</p>
+        <p>           Mardi :      10h00 - 22h00</p>
+        <p>           Mercredi :   10h00 - 22h00</p>
+        <p>           Jeudi :      10h00 - 22h00</p>
+        <p>           Vendredi :   14h00 - 02h00</p>
+        <p>           Samedi :     14h00 - 02h00</p>
+        <p>           Dimanche :   14h00 - 22h00</p>
+            </pre>
+        </div>
+    </div>
+</div>
+
+
+
+
 
 <?php
 include("ZE-footer.php");

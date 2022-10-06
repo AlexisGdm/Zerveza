@@ -1,16 +1,21 @@
 .footer {
     position: absolute;
-    height: 25px;
+    height: 150px;
     bottom: 0;
     padding: 1rem;
-    background-color: rgb(66,51,3);
     color :white;
     display: flex;
     align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-image: url("../img/background/bg-footer.png");
+    background-size: 100% 100%;
   }
 .iconres{
     text-align: right;
 }
+.clear { clear: both; height: 170px; }
+
 .footer a{
      text-decoration: none;
      color: #fff;

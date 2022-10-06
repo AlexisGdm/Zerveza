@@ -24,6 +24,7 @@
  *
  */
 
+session_start();
 // SETTINGS
 // ------------------------------------------------------------------------------------------------
 // Set your username
@@ -33,15 +34,15 @@ define('LOGIN_PASS', "admin");
 
 // LANGUAGES
 // ------------------------------------------------------------------------------------------------
-define('LOGOUT_COMPLETE', "You've been successfully logged out.");
-define('INCORRECT_USERNAME_PASSWORD', "Invalid login credentials!");
-define('STARTER_GREETING', "This page is restricted, please log in.");
-define('USERNAME', "Username");
-define('PASSWORD', "Password");
-define('ENTER_USERNAME', "Enter Username");
-define('ENTER_PASSWORD', "Enter Password");
-define('REMEMBER_THIS_COMPUTER', "Remember this computer");
-define('BUTTON_LOGIN', "Log in &rarr;");
+define('LOGOUT_COMPLETE', "Vous avez été déconnecté.");
+define('INCORRECT_USERNAME_PASSWORD', "Erreur d'identifiant!");
+define('STARTER_GREETING', "Cette page est protégée, merci de vous connecter.");
+define('USERNAME', "Login");
+define('PASSWORD', "Mot de passe");
+define('ENTER_USERNAME', "Login");
+define('ENTER_PASSWORD', "Mot de passe");
+define('REMEMBER_THIS_COMPUTER', "Se souvenir de cet ordinateur");
+define('BUTTON_LOGIN', "Se connecter &rarr;");
 
 // ================================================================================================
 // ### DO NOT TOUCH ANYTHING BELOW THIS LINE ###
@@ -112,7 +113,7 @@ class Login
             $this->prompt();
         }
 
-        //check the pw
+        //check le mot de passe
         else {
             $this->user = $_SESSION[$this->prefix . 'user'];
             $this->pass = $_SESSION[$this->prefix . 'pass'];
@@ -1498,6 +1499,9 @@ class Login
         </head>
 
         <body>
+            <?php
+            include('ZE-header.php');
+            ?>
             <div class="wrapper">
                 <div class="highlight">
                     <div class="center">
