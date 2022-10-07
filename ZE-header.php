@@ -4,6 +4,8 @@
         <h4><a href="ZE-accueil.php"><img class="logoimg" src="src\img\icon\logo.png" alt="logo"></a></h4>
     </div>
 
+    <!-- <a id="boutonAdmin" href="ZE-accueil.php">Admin</a> -->
+
     <ul class="nav-links">
         <a id="laccueil" href="ZE-accueil.php">Accueil</a>
         <a id="lmenu" href="ZE-Menu-beer.php">Menu</a>
