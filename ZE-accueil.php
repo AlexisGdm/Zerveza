@@ -39,15 +39,15 @@ include('ZE-header.php');
         <div class="horaires">
             <h1 class="titre_horaires">Horaires</h1>
             <br />
-            <pre><p> 
-        <p>           Lundi :          Fermé</p>
-        <p>           Mardi :      10h00 - 22h00</p>
-        <p>           Mercredi :   10h00 - 22h00</p>
-        <p>           Jeudi :      10h00 - 22h00</p>
-        <p>           Vendredi :   14h00 - 02h00</p>
-        <p>           Samedi :     14h00 - 02h00</p>
-        <p>           Dimanche :   14h00 - 22h00</p>
-            </pre>
+
+            <p> Lundi :&emsp; &emsp; Fermé</p>
+            <p> Mardi : 10h00 - 22h00</p>
+            <p> Mercredi : 10h00 - 22h00</p>
+            <p> Jeudi : 10h00 - 22h00</p>
+            <p> Vendredi : 14h00 - 02h00</p>
+            <p> Samedi : 14h00 - 02h00</p>
+            <p> Dimanche : 14h00 - 22h00</p>
+
         </div>
     </div>
 </div>

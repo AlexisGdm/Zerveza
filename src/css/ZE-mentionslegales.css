@@ -22,9 +22,8 @@
   .div4 { grid-area: div4; }
   
   .containermentions{
-    background-color: rgb(131, 83, 20);
-    
-    color: bisque;
+    background-color: white;
+    color: black;
     height: 100%;
   }
   .titrementions{

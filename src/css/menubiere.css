@@ -23,7 +23,6 @@ table {
     border-radius: 1px;
     font-size: small;
     display: inline-flex;
-    border-radius: 1px;
     color:white;
     margin-bottom:2em;
     width: 19%;
@@ -91,16 +90,7 @@ table img {
             width: 49%;
         }
 }
-@media (max-width: 500px) {  
-    .menum {
-        font-size: small;
-    }
-    table {
-    margin-bottom:1em;
-        width: 49%;
-    }
 
-}
 @media (max-width: 500px) {  
     .menum {
         font-size: x-small;

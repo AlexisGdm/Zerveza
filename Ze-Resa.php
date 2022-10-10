@@ -6,6 +6,49 @@ include("html.php");
 <?php
 include('ZE-header.php');
 ?>
+
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+        $nameErr = "Merci d'entrer votre nom ou votre prénom";
+    } else {
+        $name = test_input($_POST["name"]);
+        // check if name only contains letters and whitespace
+        if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+            $nameErr = "Seules les lettres ou espaces sont autorisés";
+        }
+    }
+
+    if (empty($_POST["email"])) {
+        $emailErr = "Merci d'entrer votre email";
+    } else {
+        $email = test_input($_POST["email"]);
+        // check if e-mail address is well-formed
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "Format de l'email invalide";
+        }
+    }
+
+    if (empty($_POST["comment"])) {
+        $comment = "";
+    } else {
+        $comment = test_input($_POST["comment"]);
+    }
+}
+
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
+
 <main>
     <div class="container_resa">
         <div class="reservation">
