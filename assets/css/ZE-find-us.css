@@ -1,0 +1,40 @@
+.image-find-us{
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.logo{
+    width: 100px;
+    margin: auto;
+}
+.div-find-us{
+    color: white;
+    text-align: center;
+    width: 420px;
+    height: 320px;
+    margin: auto;
+    background-color: rgba(218, 165, 32, 0.8);
+    padding: 10px 15px 10px 15px;
+    border-radius: 1px;
+   font-size: large;
+}
+.div-find-us h3{
+    font-size: xx-large;
+}
+.city-find-us{
+    text-align: center;
+}
+.div-find-us p{
+    text-align: center;
+}
+.map{
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .div-find-us{width: 300px; height: 300px; font-size: medium;}  
+    iframe{width: 330px; height: 330px;}
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .div-find-us{width: 300px; height: 300px; font-size: medium;}  
+    iframe{width: 380px; height: 330px;}
+}

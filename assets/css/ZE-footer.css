@@ -1,0 +1,146 @@
+.footer {
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    padding: 1rem;
+    color :white;
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-image: url("../img/background/bg-footer.png");
+    background-size: 100% 100%;
+  }
+.iconres{
+    text-align: right;
+}
+.clear { clear: both; height: 170px; }
+
+.footer a{
+     text-decoration: none;
+     color: #fff;
+}
+.health{
+    text-align: center;
+} 
+.iconr {
+    max-width: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pres {
+  width:33.33%;
+  display: inline-block;
+  margin-right: -0.25em;
+  vertical-align: middle;
+  }
+
+  .openBtn {
+    display: flex;
+    justify-content: left;
+  }
+  .openButton {
+    border: none;
+    border-radius: 1px;
+    background-color: #1c87c9;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    position: fixed;
+  }
+  .loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+  #admintitle{
+    padding-bottom: 20px;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgb(255 255 255);
+  }
+  .formContainer input[type=text],
+  .formContainer input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+  .formContainer input[type=text]:focus,
+  .formContainer input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
+@media only screen and (max-width: 1472px){
+    .iconr{
+        max-width: 8%;
+    }
+  } 
+@media only screen and (max-width: 934px){
+  .iconr{
+      max-width: 15%;
+  }
+} 
+@media only screen and (max-width: 758px){
+  .iconr{
+      max-width: 10%;
+  }
+} 
+@media only screen and (max-width: 600px){
+  .iconr{
+      max-width: 12%;
+  }
+
+  .mobfoot{
+    font-size:smaller;
+  }
+  .footernotice{
+    width: 24%;
+  }
+  .health{
+    width: 24%;
+  }
+  .iconres{
+    width: 52%;
+  }
+  .iconres{
+    text-align: center;
+  }
+} 
+@media only screen and (max-width: 450px){
+  .iconr{
+      max-width: 10%;
+  }
+  .footer{
+    font-size: xx-small;
+  }
+}
