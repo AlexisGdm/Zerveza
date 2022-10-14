@@ -18,7 +18,7 @@ $db = connectDb();
 <div class="menu-web">
     <article id="sous-blanche">
         <?php
-        $sqlRequest1 = 'SELECT * FROM beer WHERE TYPE_beer = "Blanche"';
+        $sqlRequest1 = 'SELECT PHOTO_beer, NAME_beer, DESC_beer FROM beer WHERE TYPE_beer = "Blanche"';
         $sqlResponse = $db->prepare($sqlRequest1);
         $sqlResponse->execute();
         $results = $sqlResponse->fetchAll(PDO::FETCH_OBJ);
