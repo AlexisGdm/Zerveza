@@ -1,12 +1,7 @@
 <?php
-require_once "../src/connectdb.php";
-require("ZE-admin-auth.php");
 $login = new Login;
 $login->authorize();
 $db = connectDb();
-require("../src/ZE-back-admin-add.php");
-require("head.php");
-require('ZE-header-admin.php');
 ?>
 <div class="add-beer">
     <h4>Saisie d'une nouvelle bière !</h4>
@@ -28,7 +23,6 @@ require('ZE-header-admin.php');
                 <?php
                 }
                 ?>
-
             </select>
         </div>
 
@@ -50,6 +44,3 @@ require('ZE-header-admin.php');
         </div>
     </form>
 </div>
-<?php
-require 'ZE-footer.php';
-?>

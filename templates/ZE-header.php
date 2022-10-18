@@ -1,6 +1,6 @@
 <nav class="containerheader">
     <div class="logoheader">
-        <h4><a href="ZE-homepage.php"><img class="logoimg" src="../assets/img/icon/logo.png" alt="logo"></a></h4>
+        <h4><a href="ZE-homepage"><img class="logoimg" src="../assets/img/icon/logo.png" alt="logo"></a></h4>
     </div>
     <ul class="nav-links">
         <a href="ZE-homepage">Accueil</a>

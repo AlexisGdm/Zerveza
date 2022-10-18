@@ -1,7 +1,3 @@
-<?php
-require("head.php");
-require('ZE-header.php');
-?>
 <div class="container-homepage">
     <div class="title-beer-pub">
         <div class="title-beer-second" style="text-align: center; padding-top: 10px; font-size: 80px;">
@@ -44,7 +40,3 @@ require('ZE-header.php');
         </div>
     </div>
 </div>
-
-<?php
-require("ZE-footer.php");
-?>

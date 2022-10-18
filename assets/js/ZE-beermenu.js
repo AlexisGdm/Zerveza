@@ -13,6 +13,7 @@ function colorArticleBeer() {
   }
 }
 window.addEventListener("load", colorArticleBeer);
+
 // function sblanche() {
 //   document.getElementById("ablanche").style.color = "rgb(255,212,0)";
 //   document.getElementById("ablonde").style.color = "white";

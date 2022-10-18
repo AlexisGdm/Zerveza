@@ -1,8 +1,5 @@
 <?php
-require_once "../src/connectdb.php";
-
 $db = connectDb();
-require("ZE-admin-auth.php");
 $login = new Login;
 $login->authorize();
 $ID_beer = "";
@@ -43,5 +40,3 @@ if ($results) {
     </div>
 <?php
 }
-require 'ZE-footer.php';
-?>

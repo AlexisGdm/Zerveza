@@ -4,7 +4,7 @@ require("ZE-admin-auth.php");
 $db = connectDb();
 $login = new Login;
 $login->authorize();
-require("../src/ZE-back-admin-resa.php");
+require("../src/ZE-model-admin-resa.php");
 require("head.php");
 require('ZE-header-admin.php');
 ?>

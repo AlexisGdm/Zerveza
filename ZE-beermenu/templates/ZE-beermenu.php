@@ -1,9 +1,3 @@
-<?php
-require("head.php");
-require('ZE-header.php');
-require "../src/connectdb.php";
-require("../src/ZE-back-beermenu.php");
-?>
 <div class="menum">
     <div id="nav-links-menubeer">
         <ul class="menum">
@@ -23,6 +17,3 @@ require("../src/ZE-back-beermenu.php");
         ?>
     </article>
 </div>
-<?php
-require("ZE-footer.php");
-?>

@@ -1,13 +1,7 @@
 <?php
-require_once "../src/connectdb.php";
-
 $db = connectDb();
-require("ZE-admin-auth.php");
 $login = new Login;
 $login->authorize();
-require('../src/ZE-back-admin-remove.php');
-require("head.php");
-require('ZE-header-admin.php');
 ?>
 
 <div class="remove-beer mb-3">
@@ -57,6 +51,3 @@ require('ZE-header-admin.php');
         </div>
     </form>
 </div>
-<?php
-require 'ZE-footer.php';
-?>

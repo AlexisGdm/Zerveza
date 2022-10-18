@@ -1,13 +1,8 @@
 <?php
-require_once "../src/connectdb.php";
 $id_resa = '';
 $db = connectDb();
-require("ZE-admin-auth.php");
 $login = new Login;
 $login->authorize();
-require("../src/ZE-back-admin-resa-2.php");
-require("head.php");
-require('ZE-header-admin.php');
 ?>
 <div class="show-resa-title-beer-second">
     <h4>Voici le détail de la reservation n° : <?= $id_resa ?></h4>
@@ -48,6 +43,3 @@ require('ZE-header-admin.php');
     </div>
 </form>
 </div>
-<?php
-require 'ZE-footer.php';
-?>
