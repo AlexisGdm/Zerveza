@@ -40,7 +40,7 @@ $db = connectDb();
             <button type="submit" class="btn btn-primary">CREER</button>
         </div>
         <div class="mb-3">
-            <button type="button"><a href="ZE-admin-add.php">Annuler</a></button>
+            <button type="button"><a href="../ZE-controller-admin-add.php">Annuler</a></button>
         </div>
     </form>
 </div>

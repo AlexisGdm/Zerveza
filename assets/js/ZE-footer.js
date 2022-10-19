@@ -13,6 +13,6 @@ jQuery(document).ready(function ($) {
   });
 
   $(".btn_no").click(function () {
-    window.location.href = "../assets/img/background/pikachu.gif";
+    window.location.href = "././assets/img/background/pikachu.gif";
   });
 });

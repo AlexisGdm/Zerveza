@@ -1,1 +1,1 @@
-<?php require('ZE-homepage');
+<?php require('./homepage/ZE-controller-homepage.php');
