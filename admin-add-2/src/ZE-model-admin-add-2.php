@@ -1,8 +1,9 @@
 <?php
-$NAME_beer = $_POST['NAME_beer'];
-$TYPE_beer = $_POST['choix'];
-$DESC_beer = $_POST['Message'];
-$PHOTO_beer = $_POST["PHOTO_beer"];
+$db = connectDb();
+$NAME_beer = $_GET['NAME_beer'];
+$TYPE_beer = $_GET['choix'];
+$DESC_beer = $_GET['Message'];
+$PHOTO_beer = $_GET["PHOTO_beer"];
 $sqlRequest = "INSERT INTO beer (NAME_beer, TYPE_beer, DESC_beer, PHOTO_beer) VALUES (:NAME_beer, :TYPE_beer, :DESC_beer, :PHOTO_beer)";
 $sql = $db->prepare($sqlRequest);
 $sql->bindParam('NAME_beer', $NAME_beer, PDO::PARAM_STR);

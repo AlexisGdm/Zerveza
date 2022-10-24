@@ -1,5 +1,6 @@
 <?php
 require("../sql/connectdb.php");
+include("../head/ZE-controller-head.php");
 require("../admin-auth/ZE-controller-admin-auth.php");
 require("./src/ZE-model-admin-resa-2.php");
 require('../header-admin/ZE-controller-header-admin.php');

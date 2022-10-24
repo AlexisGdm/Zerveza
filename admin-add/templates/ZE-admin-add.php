@@ -1,13 +1,12 @@
 <?php
 $login = new Login;
 $login->authorize();
-$db = connectDb();
 ?>
 <div class="add-beer">
     <h4>Saisie d'une nouvelle bière !</h4>
 </div>
 <div class="add-beer">
-    <form method="post" action="ZE-admin-add-2.php">
+    <form method="get" action="//Zerveza/admin-add-2">
         <div class="mb-3">
             <label for="title-beer-second" class="form-label">Nom :</label>
             <input type="text" class="form-control" id="NAME_beer" name="NAME_beer" required>
