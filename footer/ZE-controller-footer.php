@@ -1,2 +1,2 @@
 <?php
-require('../footer/templates/ZE-footer.php');
+require('templates\ZE-footer.php');

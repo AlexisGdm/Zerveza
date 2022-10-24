@@ -16,10 +16,10 @@
         </div>
     </div>
     <div class="photo-pub">
-        <img src="././assets/img/background/bg3.jpg" alt="img">
+        <img src="//Zerveza/assets/img/background/bg3.jpg" alt="img">
     </div>
     <div class="photo-desc">
-        <img src="././assets/img/background/shutterstock_113954089-beer.jpg" alt="">
+        <img src="//Zerveza/assets/img/background/shutterstock_113954089-beer.jpg" alt="">
     </div>
     <div class="desc-pub">
         <div class="txt-pub">

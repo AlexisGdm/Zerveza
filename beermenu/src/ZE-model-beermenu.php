@@ -12,7 +12,7 @@ function showBeer($typeBeer)
         <table class="table-beermenu">
             <tbody>
                 <tr>
-                    <td rowspan="2" class="img_beer"><img src="././assets/img/beer/<?= $beer->PHOTO_beer ?>" alt="Affiche de la bière<?= $beer->NAME_beer ?>"></td>
+                    <td rowspan="2" class="img_beer"><img src="//Zerveza/assets/img/beer/<?= $beer->PHOTO_beer ?>" alt="Affiche de la bière<?= $beer->NAME_beer ?>"></td>
                     <td class="NAME_beer"><?= $beer->NAME_beer ?></td>
                 </tr>
                 <tr>

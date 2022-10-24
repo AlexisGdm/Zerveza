@@ -1,9 +1,7 @@
 <?php
-require("../src/connectdb.php");
-require("ZE-admin-auth.php");
-require("ZE-admin-auth.php");
-require("../src/ZE-model-admin-resa-2.php");
-require("../Zerveza/head.php");
-require('ZE-header-admin.php');
-require('ZE-admin-resa-2.php');
-require('../Zerveza/footer/templates/ZE-footer.php');
+require("../sql/connectdb.php");
+require("../admin-auth/ZE-controller-admin-auth.php");
+require("./src/ZE-model-admin-resa-2.php");
+require('../header-admin/ZE-controller-header-admin.php');
+require('./templates/ZE-admin-resa-2.php');
+require('../footer/ZE-controller-footer.php');

@@ -1,6 +1,4 @@
 <?php
-require("../Zerveza/head.php");
-require('../Zerveza/header/ZE-controller-header.php');
 if (isset($_POST['submit'])) {
     $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
     $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
@@ -92,6 +90,4 @@ if (isset($_POST['Message'])) {
         echo "<p style='color:red; font-size:20px; border: 1px black solid; width:20%; text-align:center; margin-left:650px'>Votre message n'a pas été envoyé !!!</p>";
     }
 }
-
-require("ZE-footer.php");
 ?>

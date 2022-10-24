@@ -139,9 +139,7 @@ class Login
     function prompt($msg = '')
     {
 ?>
-        <?php
-        require('../Zerveza/header/ZE-controller-header.php');
-        ?>
+
         <div class="wrapper">
             <div class="highlight">
                 <div class="center">

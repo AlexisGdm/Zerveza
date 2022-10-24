@@ -1,2 +1,2 @@
 <?php
-require("../admin-auth/templates/ZE-admin-auth.php");
+require("templates/ZE-admin-auth.php");

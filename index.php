@@ -1,1 +1,2 @@
-<?php require('./homepage/ZE-controller-homepage.php');
+<?php
+require('./homepage/ZE-controller-homepage.php');
