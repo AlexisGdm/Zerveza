@@ -13,7 +13,7 @@
     <a href=""><img class="iconr" src="//Zerveza/assets/img/icon/ico-tripadvisor.png" alt="tripadvisor"></a>
   </div>
 </div>
-
+</div>
 <div id="container_popup">
   <div class="form-popup" id="popup-Form">
     <div class="form-container">
@@ -30,7 +30,6 @@
   </div>
 </div>
 <div class="overlay-verify"></div>
-</div>
 
 <script src="//Zerveza/assets/js/ZE-beermenu.js"></script>
 <script src="//Zerveza/assets/js/ZE-contact.js"></script>

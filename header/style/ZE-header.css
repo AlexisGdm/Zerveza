@@ -1,10 +1,12 @@
 .containerheader{
-    background: rgb(197,90,17);
+    background: white;
     display: flex;
     justify-content:space-around;
     align-items: center;
     color: #fff;
     height: 70px;
+    border-bottom: 4px solid rgb(255,212,0);
+    padding-top: 4px;
   }
   .nav-links {
       display: flex;
@@ -18,7 +20,7 @@
     display: block;
      text-transform: uppercase;
      text-decoration: none;
-     color: #fff;
+     color: black;
     border-bottom:2px solid transparent;
     transition:0.5s ease;
     transform: translateX(0%);

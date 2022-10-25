@@ -1,4 +1,5 @@
 <?php
+require('../header-admin/ZE-controller-header-admin.php');
 $db = connectDb();
 $login = new Login;
 $login->authorize();
@@ -22,11 +23,10 @@ if ($results) {
     $sql->bindParam('ID_beer', $ID_beer, PDO::PARAM_STR);
     $sql->execute();
     $db = disconnectDb();
-    include('//Zerveza/head/ZE-controller-head.php');
-    include('//Zerveza/header-admin/ZE-controller-header-admin.php');
 ?>
     <div>
         <p>Bière supprimée avec succès</p>
+        <?php header("refresh:3;url= //Zerveza/admin-remove"); ?>
     </div>
 <?php
 } else {

@@ -23,7 +23,7 @@
           <h3>RESERVATION</h3>
           <div class="form-resa">
               <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);
-                            header("ZE-Resa2.php") ?>" method="POST">
+                            header("//Zerveza/resa2") ?>" method="POST">
 
                   <label for="name">Name:</label><br>
                   <input type="text" name="name">

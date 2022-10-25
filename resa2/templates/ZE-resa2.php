@@ -29,7 +29,7 @@ $db = disconnectDb();
 ?>
 <script>
     setTimeout(function() {
-        window.location.href = 'ZE-resa.php';
+        window.location.href = '//Zerveza/resa';
     }, 5000);
 </script>
 <?php

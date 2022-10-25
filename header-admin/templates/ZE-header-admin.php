@@ -1,6 +1,6 @@
 <nav class="containerheader">
     <div class="logo-admin">
-        <a href="../../homepage/ZE-controller-homepage.php"><img class="logoimg" src="//Zerveza/assets/img/icon/logo.png" alt="logo"></a>
+        <a href="../../homepage"><img class="logoimg" src="//Zerveza/assets/img/icon/logo.png" alt="logo"></a>
     </div>
     <ul class="nav-links">
         <li><a href="//Zerveza/admin/ZE-controller-admin.php?action=clear_login">Deconnexion</a></li>

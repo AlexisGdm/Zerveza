@@ -1,2 +1,2 @@
 <?php
-require('./homepage/ZE-controller-homepage.php');
+header('Location: //Zerveza/homepage');

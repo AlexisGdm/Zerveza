@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
             <h3>CONTACT</h3>
         </div>
         <br>
-        <form class="form-contact" method="post" action="ZE-contact.php">
+        <form class="form-contact" method="post" action="//Zerveza/contact">
             <div id="contact">
                 <input type="text" name="Nom" id="Nom" placeholder="Nom" size="20" required />
                 <br>
