@@ -1,6 +1,6 @@
 .footer {
     position: absolute;
-    height: 150px;
+    height: 200px;
     bottom: 0;
     padding: 1rem;
     color :white;
@@ -8,8 +8,7 @@
     align-items: center;
     align-content: flex-end;
     flex-wrap: wrap;
-    background-image: url("../../assets/img/background/bg-footer.png");
-    background-size: 100% 100%;
+    background: #ffd825 url("../../assets/img/background/bg-footer.png") repeat-x top center
   }
 .iconres{
     text-align: right;

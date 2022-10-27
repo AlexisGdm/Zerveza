@@ -1,6 +1,4 @@
-.title-beer-second{
-    margin-top: 30px;
-}
+
 .title-beer-second-schedule{
     font-size: xx-large;
 }
@@ -11,71 +9,11 @@
     margin: auto;
     padding: 10px 0px 10px 0px;
 }
-
-.B {
-    transform: translate(23px, 20px) rotate(-35deg);
-}
-.a1 {
-    transform: translate(13px, -5px) rotate(-25deg);
-}
-.r1 {
-    transform: translate(6px, -20px) rotate(-20deg);
-}
-.esp1 {
-    transform: translate(3px, -32px) rotate(-15deg);
-    visibility: hidden;
-}
-.a2{
-    transform: translate(4px, -32px) rotate(-5deg);
-}
-.esp2 {
-    transform: translate(1px, -40px) rotate(-5deg);
-    visibility: hidden;
-}
-.b {
-    transform: translate(0px, -30px) rotate(3deg);
-}
-.i {
-    transform: translate(-1px, -25px) rotate(6deg);
-}
-.e1 {
-    transform: translate(-2px, -20px) rotate(5deg);
-}
-.r2 {
-    transform: translate(-3px, -23px) rotate(-2deg);
-}
-.e2 {
-    transform: translate(-6px, -30px) rotate(-15deg);
-}
-.s {
-    transform: translate(-8px, -40px) rotate(-20deg);
-}
-.title-beer-second span {
-    display: inline-block;
-    color: goldenrod;
-    font-size: 65px;
-}
 .txt-pub{
     color: black;
     font-size: large;
     background-color: #cccccc;
     width: 75%;
-}
-
-@media screen and (max-width: 600px) {
-    .txt-pub {width: 70%;font-size: medium;}
-    .title-beer-second span{font-size: 30px}
-    .title-beer-second-schedule{font-size: large;}
-    .schedule-pub-second{font-size: x-small; height: 300px;}
-}
-@media screen and (max-width: 900px) {
-    .txt-pub{width: 70%; font-size: medium;}
-    .title-beer-second span{font-size: 50px}
-    .title-beer-second-schedule{font-size: x-large;}
-    .schedule-pub-second{font-size: small; height: 360px;}
-}
-.title-beer-pub{
-    background-color: #fff2d3;
 }
 .photo-desc img{
     width: 100%;
@@ -93,23 +31,29 @@
     gap: 6px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "title-beer-pub title-beer-pub title-beer-pub title-beer-pub title-beer-pub title-beer-pub"
       "photo-pub photo-pub photo-pub photo-pub photo-pub photo-pub"
       "photo-pub photo-pub photo-pub photo-pub photo-pub photo-pub"
       "photo-desc desc-pub desc-pub schedule-pub schedule-pub schedule-pub"
       "photo-desc desc-pub desc-pub schedule-pub schedule-pub schedule-pub";
   }
-  
-  .title-beer-pub { grid-area: title-beer-pub; }
-  
   .photo-pub { grid-area: photo-pub; }
   
   .photo-desc {
     justify-self: stretch;
     grid-area: photo-desc;
-  }
+  } 
   
   .desc-pub { grid-area: desc-pub; }
   
   .schedule-pub { grid-area: schedule-pub; }
   
+@media screen and (max-width: 900px) {
+    .txt-pub{width: 70%; font-size: medium;}
+    .title-beer-second-schedule{font-size: x-large;}
+    .schedule-pub-second{font-size: small; height: 360px;}
+}
+@media screen and (max-width: 600px) {
+    .txt-pub {width: 70%;font-size: medium;}
+    .title-beer-second-schedule{font-size: large;}
+    .schedule-pub-second{font-size: x-small; height: 300px;}
+}

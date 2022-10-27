@@ -12,9 +12,6 @@ body{
     background-color: #FFFFFF;
     overflow-x: hidden;
 }
-main {
-    position: relative;
-}
 li{
     list-style-type: none;
 }

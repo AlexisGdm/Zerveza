@@ -1,53 +1,70 @@
 .container-find-us{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding-top: 20px;
     align-items: center;
 }
 .div-find-us{
-    color: white;
-    text-align: center;
-    height: 100%;
-    margin: auto;
-    background-color: rgba(218, 165, 32, 0.8);
-    border-radius: 1px;
-    font-size: large;
-    padding: 20px;
-}
-.map{
-    margin: auto;
-}   
+    padding-right: 20px;
+} 
 .image-find-us{
   width: 100%;
   display: flex;
   text-align: center;
 }
-.logo{
+.logo-find-us{
     width: 100px;
     margin: auto;
+    padding-bottom: 25px;
 }
 
 .div-find-us h3{
     font-size: xx-large;
 }
-.city-find-us{
+#title-find-us{
     text-align: center;
-    margin: auto;
 }
-.div-find-us p{
+#schedule-find-us{
+    padding-bottom: 25px;
     text-align: center;
 }
 
+.txt-find-us{
+    padding-top: 5px;
+    font-size: 14px;
+}
 #map-iframe{
     width: 950px;
-    height: 650px;
-    border: 0;
+    height: 600px;
+    border: 1;
+}
+@media screen and (max-width: 1340px) {
+    .container-find-us{
+    display: flex;
+    flex-direction: column;
+    }
+    #map-iframe{
+        width: 500px;
+        height: 250px;
+        margin-top: 20px;
+    }
+    
 }
 @media screen and (max-width: 600px) {
-    .div-find-us{width: 300px; height: 300px; font-size: medium;}  
-    iframe{width: 330px; height: 330px;}
-}
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    .div-find-us{width: 300px; height: 300px; font-size: medium;}  
-    iframe{width: 380px; height: 330px;}
+    .container-find-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-find-us{
+        padding-right: 0px;
+    } 
+    #map-iframe{
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .div-find-us{
+        padding-right: 0px;
+    } 
 }

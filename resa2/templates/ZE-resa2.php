@@ -1,54 +1,58 @@
-<main>
-    <div>
-        <!-- col-sm-8 -->
-        <h2 class="confirmation">La réservation de <?= $_POST['Prenom'] ?> <?= $_POST['Nom'] ?> a été ajouté avec succès !!</h2>
-    </div>
-</main>
 <?php
-require_once "../src/connectdb.php";
+require_once("../sql/connectdb.php");
 
-$NOM = $_POST['Nom'];
-$PRENOM = $_POST['Prenom'];
-$TELEPHONE = $_POST['Telephone'];
-$EMAIL = $_POST['Email'];
-$DATE = $_POST['Date_Resa'];
-$NOMBRE_PERS = $_POST['Nombre_Pers'];
-$MESSAGE = $_POST['Messages'];
+$lname = $_POST['lname'];
+$fname = $_POST['fname'];
+$tel = $_POST['telephone'];
+$mail = $_POST['email'];
+$date = $_POST['date'];
+$numberperson = $_POST['number-person'];
+$message = $_POST['message'];
 $db = connectDb();
-$sqlRequest = "INSERT INTO Reservation (NOM, PRENOM, TELEPHONE, EMAIL, DATES, NOMBRE_PERS, MESSAGES) VALUES ( :NOM, :PRENOM, :TELEPHONE, :EMAIL, :DATES, :NOMBRE_PERS, :MESSAGES)";
+$sqlRequest = "INSERT INTO Reservation (Last_name, First_name, Telephone, Email, Dates, Number_persons, Messages) VALUES ( :Last_name, :First_name, :Telephone, :Email, :Dates, :Number_persons, :Messages)";
+
 $sql = $db->prepare($sqlRequest);
-$sql->bindParam('NOM', $NOM, PDO::PARAM_STR);
-$sql->bindParam('PRENOM', $PRENOM, PDO::PARAM_STR);
-$sql->bindParam('TELEPHONE', $TELEPHONE, PDO::PARAM_STR);
-$sql->bindParam('EMAIL', $EMAIL, PDO::PARAM_STR);
-$sql->bindParam('DATES', $DATE, PDO::PARAM_STR);
-$sql->bindParam('NOMBRE_PERS', $NOMBRE_PERS, PDO::PARAM_STR);
-$sql->bindParam('MESSAGES', $MESSAGE, PDO::PARAM_STR);
+$sql->bindParam('Last_name', $lname, PDO::PARAM_STR);
+$sql->bindParam('First_name', $fname, PDO::PARAM_STR);
+$sql->bindParam('Telephone', $tel, PDO::PARAM_STR);
+$sql->bindParam('Email', $mail, PDO::PARAM_STR);
+$sql->bindParam('Dates', $date, PDO::PARAM_STR);
+$sql->bindParam('Number_persons', $numberperson, PDO::PARAM_STR);
+$sql->bindParam('Messages', $message, PDO::PARAM_STR);
 $sql->execute();
-$db = disconnectDb();
 ?>
-<script>
+<div>
+    <p class="confirmation-reservation">La réservation de <?= $_POST['fname'] ?> <?= $_POST['lname'] ?> a été ajoutée avec succès. <br>
+        Vous allez recevoir un email de confirmation.</p>
+</div>
+<!-- <script>
     setTimeout(function() {
         window.location.href = '//Zerveza/resa';
     }, 5000);
-</script>
+</script> -->
 <?php
-if (isset($_POST['Email'])) {
 
-    $nom = $_POST["Nom"];
-    $mail = $_POST["Email"];
-    $prenom = $_POST["Prenom"];
-    $date = $_POST["Date_Resa"];
-    $nombre_pers = $_POST["Nombre_Pers"];
-    $sujet = "Votre réservation";
-    $message = "Bonjour $prenom $nom, nous vous confirmons votre r&eacute;servation du $date pour $nombre_pers personnes.\n\n Merci de votre confiance et à très bientôt.\n\n L'équipe Zerveza";
-
+if (isset($_POST['email'])) {
+    $lname = $_POST["lname"];
+    $mail = $_POST["email"];
+    $fname = $_POST["fname"];
+    $date = $_POST["date"];
+    $newdate = explode("-", $date);
+    $newdate1 = $newdate[0];
+    $newdate2 = $newdate[1];
+    $newdate3 = $newdate[2];
+    $newdate4 = explode("T", $newdate3);
+    $newdate5 = $newdate4[0];
+    $newdate6 = $newdate4[1];
+    $numberperson = $_POST["number-person"];
+    $sujet = "Votre r%C3%A9servation";
+    $message = "Bonjour" . " " . $fname . " " . $lname . ", nous vous confirmons votre réservation du " . $newdate5 . "-" . $newdate2 . "-" . $newdate1 . " à " . $newdate6 . " pour " . $numberperson . " personnes.\n\n Merci de votre confiance et à très bientôt.\n\n L'équipe Zerveza.";
 
     $headers = "Content-Type: text/plain; charset=utf-8\r\n";
 
     if (mail($mail, $sujet, $message, $headers)) {
 
-        echo " ";
+        echo "";
     } else {
 
         echo "<p style='color:red; font-size:20px; border: 1px black solid; width:20%; text-align:center; margin-left:650px'>Votre message n'a pas été envoyé !!!</p>";

@@ -181,24 +181,12 @@ VALUES (
         "beer25.png"
     );
 
---
-
--- Structure de la table `admin`
-
---
-
 CREATE TABLE
     if not EXISTS `admin` (
         `id` int(11) NOT NULL,
         `LOGIN_ADMIN` varchar(255) NOT NULL,
         `PASS_ADMIN` varchar(255) NOT NULL
     ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
-
---
-
--- Déchargement des données de la table `admin`
-
---
 
 INSERT INTO
     `admin` (
@@ -208,16 +196,14 @@ INSERT INTO
     )
 VALUES (1, 'admin', 'admin');
 
--- -------------------------------------------------------- TABLE RESERVATION
-
 CREATE TABLE
     IF NOT EXISTS `Reservation` (
-        `ID_RESERVATION` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        `NOM` varchar(25) NOT NULL DEFAULT '',
-        `PRENOM` varchar(15) NOT NULL DEFAULT '',
-        `TELEPHONE` varchar(10) DEFAULT NULL,
-        `EMAIL` varchar(30) DEFAULT NULL,
-        `DATES` varchar(30) DEFAULT NULL,
-        `NOMBRE_PERS` varchar(10) DEFAULT NULL,
-        `MESSAGES` varchar(300) DEFAULT NULL
+        `Id_reservation` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+        `Last_name` varchar(25) NOT NULL DEFAULT '',
+        `First_name` varchar(30) NOT NULL DEFAULT '',
+        `Telephone` varchar(10) DEFAULT NULL,
+        `Email` varchar(30) DEFAULT NULL,
+        `Dates` varchar(30) DEFAULT NULL,
+        `Number_persons` varchar(10) DEFAULT NULL,
+        `Messages` varchar(300) DEFAULT NULL
     ) ENGINE = InnoDB DEFAULT CHARSET = utf8;

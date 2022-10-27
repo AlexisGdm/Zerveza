@@ -1,19 +1,5 @@
 <div class="container-homepage">
     <div class="title-beer-pub">
-        <div class="title-beer-second" style="text-align: center; padding-top: 10px; font-size: 80px;">
-            <span class="B">B</span>
-            <span class="a1">a</span>
-            <span class="r1">r</span>
-            <span class="esp1">§</span>
-            <span class="a2">à</span>
-            <span class="esp2">§</span>
-            <span class="b">b</span>
-            <span class="i">i</span>
-            <span class="e1">è</span>
-            <span class="r2">r</span>
-            <span class="e2">e</span>
-            <span class="s">s</span>
-        </div>
     </div>
     <div class="photo-pub">
         <img src="//Zerveza/assets/img/background/bg3.jpg" alt="img">
@@ -29,7 +15,6 @@
     <div class="schedule-pub">
         <div class="schedule-pub-second">
             <h1 class="title-beer-second-schedule">Horaires</h1>
-            <br />
             <p> Lundi :&emsp; &emsp; Fermé</p>
             <p> Mardi : 10h00 - 22h00</p>
             <p> Mercredi : 10h00 - 22h00</p>

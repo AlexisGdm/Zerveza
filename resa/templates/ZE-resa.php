@@ -1,52 +1,27 @@
-  <main>
-      <?php
-        if (isset($_POST['submit'])) {
-            $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
-            $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
-            $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
-            $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
-            if (!preg_match("/^[A-Za-z .'-]+$/", $name)) {
-                $name_error = 'Invalid name';
-            }
-            if (!preg_match("/^[A-Za-z .'-]+$/", $subject)) {
-                $subject_error = 'Invalid subject';
-            }
-            if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
-                $email_error = 'Mail invalide';
-            }
-            if (strlen($message) === 0) {
-                $message_error = 'Votre message ne doit pas être vide';
-            }
-        }
-        ?>
-      <div class="div-form-resa">
-          <h3>RESERVATION</h3>
-          <div class="form-resa">
-              <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);
-                            header("//Zerveza/resa2") ?>" method="POST">
-
-                  <label for="name">Name:</label><br>
-                  <input type="text" name="name">
-                  <p><?php if (isset($name_error)) echo $name_error; ?></p>
-
-                  <label for="name">Name:</label><br>
-                  <input type="text" name="name">
-                  <p><?php if (isset($name_error)) echo $name_error; ?></p>
-
-                  <label for="subject">Subject:</label><br>
-                  <input type="text" name="subject">
-                  <p><?php if (isset($subject_error)) echo $subject_error; ?></p>
-
-                  <label for="email">Email:</label><br>
-                  <input type="text" name="email">
-                  <p><?php if (isset($email_error)) echo $email_error; ?></p>
-
-                  <label for="message">Message:</label><br>
-                  <textarea name="message"></textarea>
-                  <p><?php if (isset($message_error)) echo $message_error; ?></p>
-
-                  <input type="submit" name="submit" value="Submit">
-              </form>
-          </div>
-      </div>
-  </main>
+<div class="container_resa">
+    <div class="reservation">
+        <h3>RESERVATION</h3>
+        <form class="form-resa" method="post" action="../../resa2/index.php">
+            <div class="cont1 resa">
+                <input type="text" name="lname" placeholder="Nom" size="40" required />
+                <br>
+                <input type="text" name="fname" placeholder="Prénom" size="40" required />
+                <br>
+                <input type="tel" name="telephone" placeholder="Numéro de téléphone" size="14" required />
+                <br>
+                <input type="email" name="email" placeholder="exemple@email.com" size="40" required />
+            </div>
+            <div class="cont2 resa">
+                <input type="datetime-local" name="date" required />
+                <br>
+                <input type="number" name="number-person" min="1" placeholder="Nombre de personnes" size="15" required />
+                <br>
+                <textarea type="text" name="message" placeholder="Message" rows="4" cols=40></textarea>
+                <br>
+            </div>
+            <div class="btn resa">
+                <input type="submit" class="reserver" value="Réserver" />
+            </div>
+        </form>
+    </div>
+</div>
