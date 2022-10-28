@@ -25,13 +25,14 @@ $sql->execute();
     <p class="confirmation-reservation">La réservation de <?= $_POST['fname'] ?> <?= $_POST['lname'] ?> a été ajoutée avec succès. <br>
         Vous allez recevoir un email de confirmation.</p>
 </div>
-<!-- <script>
+<script>
     setTimeout(function() {
         window.location.href = '//Zerveza/resa';
     }, 5000);
-</script> -->
+</script>
 <?php
 
+// email confirmation for reservation // confirmation de mail pour la reservation
 if (isset($_POST['email'])) {
     $lname = $_POST["lname"];
     $mail = $_POST["email"];
@@ -45,17 +46,14 @@ if (isset($_POST['email'])) {
     $newdate5 = $newdate4[0];
     $newdate6 = $newdate4[1];
     $numberperson = $_POST["number-person"];
-    $sujet = "Votre r%C3%A9servation";
+    $sujet = "Confirmation reservation - Zerveza";
     $message = "Bonjour" . " " . $fname . " " . $lname . ", nous vous confirmons votre réservation du " . $newdate5 . "-" . $newdate2 . "-" . $newdate1 . " à " . $newdate6 . " pour " . $numberperson . " personnes.\n\n Merci de votre confiance et à très bientôt.\n\n L'équipe Zerveza.";
 
     $headers = "Content-Type: text/plain; charset=utf-8\r\n";
 
-    if (mail($mail, $sujet, $message, $headers)) {
-
-        echo "";
-    } else {
-
-        echo "<p style='color:red; font-size:20px; border: 1px black solid; width:20%; text-align:center; margin-left:650px'>Votre message n'a pas été envoyé !!!</p>";
+    // if mail connot be sent echo error // si le message ne peut pas être envoyé afficher erreur
+    if (!mail($mail, $sujet, $message, $headers)) {
+        echo "<p id='error-' style='color:red; font-size:20px; border: 1px black solid; width:20%; text-align:center; margin-left:650px'>Votre message n'a pas été envoyé...</p>";
     }
 }
 ?>
