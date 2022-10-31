@@ -10,9 +10,8 @@
     </div>
 </div>
 <div class="menu-web">
-    <article id="sous-blanche">
+    <article>
         <?php
-        var_dump($_GET);
         showBeer($_GET["tp"]);
         ?>
     </article>

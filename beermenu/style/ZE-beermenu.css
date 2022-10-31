@@ -31,26 +31,6 @@
 .tr_img{
     height: 170px;
 }
-#sous-blanche {
-    display: block;
-    margin: 4%;   
-}
-#sous-blonde {
-    display: none;
-    margin: 4%;  
-}
-#sous-ambree {
-    display: none;
-    margin: 4%;  
-}
-#sous-brune {
-    display: none;
-    margin: 4%;  
-}
-#sous-speciale {
-    display: none;
-    margin: 4%;  
-}
 @media (max-width: 1580px){  
     .desc_beer {
         font-size: medium;
@@ -94,21 +74,6 @@
     table {
     margin-bottom:1em;
         width: 99%;
-    }
-    #sous-blanche {
-        padding-bottom: 50px;
-    }
-    #sous-blonde {
-        padding-bottom: 50px;
-    }
-    #sous-ambree {
-        padding-bottom: 50px;
-    }
-    #sous-brune {
-        padding-bottom: 50px;
-    }
-    #sous-speciale {
-        padding-bottom: 50px;
     }
 }
 .link {

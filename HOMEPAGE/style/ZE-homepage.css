@@ -1,13 +1,16 @@
-
-.title-beer-second-schedule{
-    font-size: xx-large;
+.div-txt-pub{
+    background: url("//Zerveza/assets/img/background/bg3.jpg") right;
+    height: 350px;
 }
-.schedule-pub-second{
-    font-size: medium;
-    border-radius: 1px;
-    color: black;
-    margin: auto;
-    padding: 10px 0px 10px 0px;
+.texte-pub{
+    color: white;
+}
+
+
+
+
+/* .title-beer-second-schedule{
+    font-size: xx-large;
 }
 .txt-pub{
     color: black;
@@ -50,10 +53,8 @@
 @media screen and (max-width: 900px) {
     .txt-pub{width: 70%; font-size: medium;}
     .title-beer-second-schedule{font-size: x-large;}
-    .schedule-pub-second{font-size: small; height: 360px;}
 }
 @media screen and (max-width: 600px) {
     .txt-pub {width: 70%;font-size: medium;}
     .title-beer-second-schedule{font-size: large;}
-    .schedule-pub-second{font-size: x-small; height: 300px;}
-}
+} */

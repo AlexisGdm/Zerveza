@@ -4,3 +4,12 @@
     margin-top: 330px;
     font-size: 40px;
 }
+#error-mailto-resa2, #ok-mailto-resa2{
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    margin-left: 650px;
+}
+#error-mailto-resa2{
+    color:red;
+}

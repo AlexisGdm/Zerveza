@@ -8,17 +8,6 @@
 .div-find-us{
     padding-right: 20px;
 } 
-.image-find-us{
-  width: 100%;
-  display: flex;
-  text-align: center;
-}
-.logo-find-us{
-    width: 100px;
-    margin: auto;
-    padding-bottom: 25px;
-}
-
 .div-find-us h3{
     font-size: xx-large;
 }
@@ -26,10 +15,9 @@
     text-align: center;
 }
 #schedule-find-us{
-    padding-bottom: 25px;
+    padding-top: 25px;
     text-align: center;
 }
-
 .txt-find-us{
     padding-top: 5px;
     font-size: 14px;

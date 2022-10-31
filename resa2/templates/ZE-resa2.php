@@ -22,8 +22,7 @@ $sql->bindParam('Messages', $message, PDO::PARAM_STR);
 $sql->execute();
 ?>
 <div>
-    <p class="confirmation-reservation">La réservation de <?= $_POST['fname'] ?> <?= $_POST['lname'] ?> a été ajoutée avec succès. <br>
-        Vous allez recevoir un email de confirmation.</p>
+    <p class="confirmation-reservation">La réservation de <?= $_POST['fname'] ?> <?= $_POST['lname'] ?> a été ajoutée avec succès.</p>
 </div>
 <script>
     setTimeout(function() {
@@ -48,12 +47,12 @@ if (isset($_POST['email'])) {
     $numberperson = $_POST["number-person"];
     $sujet = "Confirmation reservation - Zerveza";
     $message = "Bonjour" . " " . $fname . " " . $lname . ", nous vous confirmons votre réservation du " . $newdate5 . "-" . $newdate2 . "-" . $newdate1 . " à " . $newdate6 . " pour " . $numberperson . " personnes.\n\n Merci de votre confiance et à très bientôt.\n\n L'équipe Zerveza.";
-
     $headers = "Content-Type: text/plain; charset=utf-8\r\n";
-
-    // if mail connot be sent echo error // si le message ne peut pas être envoyé afficher erreur
-    if (!mail($mail, $sujet, $message, $headers)) {
-        echo "<p id='error-' style='color:red; font-size:20px; border: 1px black solid; width:20%; text-align:center; margin-left:650px'>Votre message n'a pas été envoyé...</p>";
+    // if mail send echo ok if message connot be sent echo error // si le message est envoyé echo ok si le message ne peut pas être envoyé echo erreur
+    if (mail($mail, $sujet, $message, $headers)) {
+        echo "<p id='ok-mailto-resa2'>Vous avez reçu un mail de confirmation.</p> ";
+    } else {
+        echo "<p id='error-mailto-resa2'>Désolé, l'email n'a pas pu être envoyé...</p>";
     }
 }
 ?>
