@@ -1,17 +1,15 @@
-.div-form-resa{
-    color: white;
-    width: 900px;
-    height: 400px;
-    background-color: rgba(218, 165, 32, 0.8);
-    border-radius: 1px;
-    margin: auto;
-    margin-top: 50px;
-    padding-top: 15px;
-    font-size: small;
-}
 .form-resa{
-    margin: auto;
-    padding: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reserv{
+    width: 120px;
+    height: 40px;
+    font-size: x-large;
+}
+.submit-resa{
+    text-align: center;
 }
 .form-resa input, .form-resa textarea{
     margin-top: 10px;
@@ -24,25 +22,23 @@
     width: auto;
     padding: 0px 10px 0px 10px;
 }
-.div-form-resa h3{
+.ok-mailto-resa{
+    color: green;
+    font-size: 20px;
+    width: 20%;
     text-align: center;
-    font-size: x-large;
+    margin-left: 650px;
 }
-.div-form-resa p{
+.error-mailto-resa{
+    color: red;
+    font-size: 20px;
+    width: 20%;
     text-align: center;
+    margin-left: 650px;
 }
-#Date_Resa{
-    color: grey;
-}
-.reserver{
-    width: 120px;
-    height: 40px;
-    font-size: x-large;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) { 
     .div-form-resa {width: 300px;}
 }
-@media screen and (min-width: 601px) and (max-width: 900px) { 
+@media screen and (max-width: 600px) {
     .div-form-resa {width: 300px;}
 }
