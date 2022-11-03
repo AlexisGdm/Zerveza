@@ -1,14 +1,122 @@
-.ok-mailto-contact{
-    color: green;
-    font-size: 20px;
-    width: 20%;
-    text-align: center;
-    margin-left: 650px;
+.ok-mailto-contact {
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 650px;
 }
-.error-mailto-contact{
-    color: red;
-    font-size: 20px;
-    width: 20%;
-    text-align: center;
-    margin-left: 650px;
+.error-mailto-contact {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 650px;
+}
+.container-contact {
+  margin-top: 40px;
+  height: 100%;
+}
+.contact-div {
+  color: black;
+  width: 660px;
+  height: 300px;
+  background-color: #f7f5f5;
+  box-shadow: 10px 5px 5px rgb(150, 149, 149);
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: small;
+}
+.cont1 {
+  padding-left: 25px;
+}
+.cont2 {
+  padding-left: 10px;
+}
+.contact {
+  width: 100%;
+}
+.form-contact {
+  margin: auto;
+  padding: 10px 0px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-contact > div {
+  flex: 40%;
+}
+.send-contact {
+  width: 120px;
+  height: 40px;
+  font-size: x-large;
+}
+.contact-div h4 {
+  height: 55px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Ballet";
+}
+.form-contact input,
+.form-contact textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 250px;
+  font-size: 16px;
+  resize: none;
+}
+.label-form-contact {
+  font-weight: bold;
+}
+.form-contact input[type="submit"] {
+  text-align: center;
+  width: auto;
+  padding: 0px 10px 0px 10px;
+  margin: auto;
+  margin-top: 10px;
+}
+.submit-contact {
+  padding-top: 18px;
+}
+.reserver {
+  width: 120px;
+  height: 40px;
+  font-size: x-large;
+}
+.title-contact {
+  text-align: center;
+}
+.txt-contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 900px) {
+  .contact-div {
+    width: 500px;
+  }
+  .form-contact input,
+  .form-contact textarea {
+    width: 180px;
+  }
+  .cont1 {
+    padding-left: 15px;
+  }
+  .cont2 {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-div {
+    width: 300px;
+    height: 500px;
+  }
+  .form-contact input,
+  .form-contact textarea {
+    width: 180px;
+  }
+  .cont1 {
+    padding-left: 35px;
+  }
+  .cont2 {
+    padding-left: 35px;
+  }
 }

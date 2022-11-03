@@ -1,4 +1,4 @@
-.containerheader {
+.containerheader-admin {
   background: white;
   display: flex;
   justify-content: space-around;
@@ -7,7 +7,7 @@
   height: 70px;
   border-bottom: 4px solid rgb(255, 212, 0);
 }
-.nav-links {
+.nav-links-admin {
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -15,7 +15,7 @@
   z-index: 2;
   overflow: hidden;
 }
-.nav-links a {
+.nav-links-admin a {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
@@ -24,14 +24,14 @@
   transition: 0.5s ease;
   transform: translateX(0%);
 }
-.nav-links a:hover {
+.nav-links-admin a:hover {
   color: rgb(232, 147, 16);
   letter-spacing: 2px;
 }
-.burger {
+.burger-admin {
   display: none;
 }
-.burger div {
+.burger-admin div {
   width: 25px;
   height: 3px;
   background: black;
@@ -39,11 +39,11 @@
   transition: all 0.5s ease;
 }
 @media only screen and (max-width: 600px) {
-  .containerheader {
+  .containerheader-admin {
     justify-content: space-between;
     padding: 0 5vw;
   }
-  .nav-links {
+  .nav-links-admin {
     position: absolute;
     right: 0;
     top: 7.4vh;
@@ -58,26 +58,26 @@
     transform: translateX(100%);
     transition: All 0.5s ease-in;
   }
-  .nav-links a {
+  .nav-links-admin a {
     opacity: 0;
   }
-  .burger {
+  .burger-admin {
     display: block;
   }
-  .nav-active {
+  .nav-active-admin {
     transform: translateX(0);
   }
 }
 @media only screen and (max-width: 460px) {
-  .nav-links {
+  .nav-links-admin {
     width: 100%;
     transition: All 0.5s ease;
   }
 }
-.nav-active {
+.nav-active-admin {
   transform: translateX(0);
 }
-@keyframes navLinkFade {
+@keyframes navLinkFade-admin {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -87,16 +87,16 @@
     transform: translateX(0);
   }
 }
-.toggle .line1 {
+.toggle-admin .line1-admin {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2 {
+.toggle-admin .line2-admin {
   opacity: 0;
 }
-.toggle .line3 {
+.toggle-admin .line3-admin {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-.logoimg {
+.logoimg-admin {
   max-width: 100px;
   max-height: 100px;
   display: flex;

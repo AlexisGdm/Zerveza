@@ -35,6 +35,7 @@
 <script src="//Zerveza/assets/js/ZE-contact.js"></script>
 <script src="//Zerveza/assets/js/ZE-footer.js"></script>
 <script src="//Zerveza/assets/js/ZE-header.js"></script>
+<script src="//Zerveza/assets/js/ZE-header-admin.js"></script>
 <script src="//Zerveza/assets/js/ZE-resa.js"></script>
 </body>
 

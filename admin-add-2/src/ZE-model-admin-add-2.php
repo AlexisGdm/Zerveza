@@ -1,7 +1,7 @@
 <?php
 $db = connectDb();
 $NAME_beer = $_GET['NAME_beer'];
-$TYPE_beer = $_GET['choix'];
+$TYPE_beer = $_GET['choice'];
 $DESC_beer = $_GET['Message'];
 $PHOTO_beer = $_GET["PHOTO_beer"];
 $sqlRequest = "INSERT INTO beer (NAME_beer, TYPE_beer, DESC_beer, PHOTO_beer) VALUES (:NAME_beer, :TYPE_beer, :DESC_beer, :PHOTO_beer)";

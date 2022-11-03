@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//Zerveza/footer/style/ZE-popup.css" />
     <link rel="stylesheet" href="//Zerveza/footer/style/ZE-footer.css" />
     <link rel="stylesheet" href="//Zerveza/header/style/ZE-header.css" />
+    <link rel="stylesheet" href="//Zerveza/header-admin/style/ZE-header-admin.css" />
     <link rel="stylesheet" href="//Zerveza/admin/style/ZE-admin.css" />
     <link rel="stylesheet" href="//Zerveza/beermenu/style/ZE-beermenu.css" />
     <link rel="stylesheet" href="//Zerveza/contact/style/ZE-contact.css" />

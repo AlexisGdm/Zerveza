@@ -2,26 +2,23 @@
     <h4>Voici la liste des réservation en cours !</h4>
 </div>
 <div class="show-resa">
-    <form method="post" action="ZE-admin-resa-2.php">
-        <div class="mb-3">
+    <form method="post" action="//Zerveza/admin-resa-2/index.php">
+        <div>
             <label for="ID" class="form-label">Selectionne une reservation :</label>
         </div>
         <div class="show-resa">
-            <select class="form-select" id="idresa" name="idresa">
+            <select class="form-select" id="id_resa" name="id_resa">
                 <?php
                 foreach ($results as $listresa) {
                 ?>
-                    <option value="<?= $listresa->ID_RESERVATION ?>"><?= 'ID : ' . $listresa->ID_RESERVATION . ' / ' . $listresa->NOM . ' - ' . $listresa->PRENOM . ' Date :' . $listresa->DATES ?></option>
+                    <option value="<?= $listresa->Id_reservation ?>"><?= 'ID : ' . $listresa->Id_reservation . ' / ' . $listresa->Last_name . ' - ' . $listresa->First_name . ' Date :' . $listresa->Dates ?></option>
                 <?php
                 }
                 ?>
             </select>
         </div>
-        <div class="mb-3">
+        <div>
             <button type="submit">Confirmer selection</button>
-        </div>
-        <div class="mb-3">
-            <button type="button"><a href="ZE-admin-resa.php">Annuler</a></button>
         </div>
     </form>
 </div>

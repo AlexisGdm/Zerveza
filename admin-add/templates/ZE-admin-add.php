@@ -11,10 +11,9 @@ $login->authorize();
             <label for="title-beer-second" class="form-label">Nom :</label>
             <input type="text" class="form-control" id="NAME_beer" name="NAME_beer" required>
         </div>
-        <!-- SELECT GENRE -->
         <div class="mb-3">
             <label for="genreselect" class="form-label">Selectionne un type</label>
-            <select class="form-select" id="choix" name="choix">
+            <select class="form-select" id="choix" name="choice">
                 <?php
                 foreach ($results as $catbeer) {
                 ?>
@@ -24,9 +23,8 @@ $login->authorize();
                 ?>
             </select>
         </div>
-
         <div class="mb-3">
-            <label for="refimg" class="form-label">Affiche :</label>
+            <label for="refimg" class="form-label">Photo de la bière :</label>
             <input type="text" class="form-control" id="PHOTO_beer" name="PHOTO_beer" required>
         </div>
 

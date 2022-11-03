@@ -1,6 +1,4 @@
 <?php
-$id_resa = '';
-$db = connectDb();
 $login = new Login;
 $login->authorize();
 ?>
@@ -11,35 +9,38 @@ $login->authorize();
     <table>
         <tbody>
             <tr>
-                <td class="email"><?= $results->NOM ?></td>
+                <td class="email">ID <?= $results->Id_reservation ?></td>
             </tr>
             <tr>
-                <td class="email"><?= $results->PRENOM ?></td>
+                <td class="email"><?= $results->Last_name ?></td>
             </tr>
             <tr>
-                <td class="telephone"><?= $results->TELEPHONE ?></td>
+                <td class="email"><?= $results->First_name ?></td>
             </tr>
             <tr>
-                <td class="email"><?= $results->EMAIL ?></td>
+                <td class="telephone"><?= $results->Telephone ?></td>
             </tr>
             <tr>
-                <td class="date"><?= $results->DATES ?></td>
+                <td class="email"><?= $results->Email ?></td>
             </tr>
             <tr>
-                <td class="email"><?= $results->NOMBRE_PERS ?></td>
+                <td class="date"><?= $results->Dates ?></td>
             </tr>
             <tr>
-                <td class="message" colspan="3"><?= $results->MESSAGES ?></td>
+                <td class="email"><?= $results->Number_persons ?> personnes</td>
+            </tr>
+            <tr>
+                <td class="message" colspan="3"><?= $results->Messages ?></td>
             </tr>
         </tbody>
     </table>
 </div>
-<form method="post" action="ZE-admin-resa-3.php?id_resa=<?= $id_resa ?>">
+<form method="post" action="//Zerveza/admin-resa-3/index.php?id_resa=<?= $id_resa ?>">
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Supprimer réservation</button>
+        <button type="submit">Supprimer réservation</button>
     </div>
     <div class="mb-3">
-        <button type="button"><a href="ZE-admin-resa.php">Retourner a la liste</a></button>
+        <button type="button"><a href="//Zerveza/admin-resa">Retourner a la liste</a></button>
     </div>
 </form>
 </div>

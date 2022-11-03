@@ -10,10 +10,10 @@ if (isset($_POST['submit-form-resa'])) {
     $NumberPerson = $_POST['number-person'];
     $Message = $_POST['message'];
     $PatternMail = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^";
-    $AllLettersReg = $_POST["lname"] . $_POST["fname"] . $Message;
+    $AllLettersReg = $Lname . $Fname . $Message;
     $Headers = "Content-Type: text/plain; charset=utf-8\r\n";
     if (!preg_match("/^[a-zA-z]*$/", $AllLettersReg)) {
-        echo "<p class='error-mailto-resa'> Seuls les lettres et espaces sont autorisés.</p>";
+        echo "<p class='error-mailto-resa'> Seules les lettres sont autorisées.</p>";
     } else if (!preg_match("/^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$/", $Tel)) {
         echo "<p class='error-mailto-resa'>Numéro de téléphone invalide.</p>";
     } else if (!preg_match($PatternMail, $Mail)) {
@@ -46,6 +46,6 @@ if (isset($_POST['submit-form-resa'])) {
         $messageMail = "Bonjour" . " " . $Fname . " " . $Lname . ", nous vous confirmons votre réservation du " . $newdate5 . "-" . $newdate2 . "-" . $newdate1 . " à " . $newdate6 . " pour " . $NumberPerson . " personnes.\n\n Merci de votre confiance et à très bientôt.\n\n L'équipe Zerveza.";
         $Headers = "Content-Type: text/plain; charset=utf-8\r\n";
         mail($Mail, $sujet, $messageMail, $Headers);
-        echo "<p class='ok-mailto-resa'>Vous avez reçu un mail de confirmation.</p> ";
+        echo "<p class='ok-mailto-resa'>Vous allez recevoir un mail de confirmation.</p> ";
     }
 }
