@@ -1,52 +1,49 @@
-
-.form-popup p{
-    text-align: center;
-    font-size: xx-large;
-}    
-.buttons-footer{
-    text-align: center;
+.form-popup p {
+  text-align: center;
+  font-size: xx-large;
 }
-.btn_yes{
-    background-color: transparent;
-    color: rgb(0, 189, 0);
-    border-color: rgb(0, 189, 0);
-    font-size: x-large;
-    width: 60px;
-    height: 35px;
+.buttons-footer {
+  text-align: center;
 }
-.form-popup{
-    margin: auto;
-    display: inline-block;
-    border: 5px solid yellow;
-    border-style: outset;
-    background-color: #DEA900;
-    padding: 20px 30px 50px 30px;
+.btn_yes {
+  background-color: transparent;
+  color: rgb(0, 189, 0);
+  border-color: rgb(0, 189, 0);
+  font-size: x-large;
+  width: 60px;
+  height: 35px;
 }
-.btn_no{
-    background-color: transparent;
-    color: red;
-    border-color: red;
-    font-size: x-large;
-    width: 60px;
-    height: 35px;
+.form-popup {
+  margin: auto;
+  display: inline-block;
+  border: 5px solid yellow;
+  border-style: outset;
+  background-color: #dea900;
+  padding: 20px 30px 50px 30px;
 }
-#container_popup{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    top: -1050px;
-    position: relative;
-    z-index: 9;
+.btn_no {
+  background-color: transparent;
+  color: red;
+  border-color: red;
+  font-size: x-large;
+  width: 60px;
+  height: 35px;
 }
-.form-container{
-    font-size: xx-large;
+#container_popup {
+  text-align: center;
+  top: -780px;
+  position: relative;
+  z-index: 9;
+}
+.form-container {
+  font-size: xx-large;
 }
 .overlay-verify {
-    position: fixed;
-    backdrop-filter: blur(8px);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 3;
-  }
+  position: fixed;
+  backdrop-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
