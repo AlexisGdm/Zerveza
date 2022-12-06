@@ -1,53 +1,15 @@
-.div-img-bar {
-  height: 350px;
+.container-homepage {
+  margin: 15px;
 }
-
-/* .title-beer-second-schedule{
-    font-size: xx-large;
+.texte-pub {
+  font-size: smaller;
+  padding: 10px;
 }
-.txt-pub{
-    color: black;
-    font-size: large;
-    background-color: #cccccc;
-    width: 75%;
-}
-.photo-desc img{
-    width: 100%;
-    margin-left: 10px;
-}
-.desc-pub p{
-    height: 100%;
-}
-.desc-pub{
-    width: 77%;
-}
-.container-homepage {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1.4fr 0.6fr 1fr;
-    gap: 6px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "photo-pub photo-pub photo-pub photo-pub photo-pub photo-pub"
-      "photo-pub photo-pub photo-pub photo-pub photo-pub photo-pub"
-      "photo-desc desc-pub desc-pub schedule-pub schedule-pub schedule-pub"
-      "photo-desc desc-pub desc-pub schedule-pub schedule-pub schedule-pub";
+@media screen and (min-width: 900px) {
+  .container-homepage {
+    margin-top: 50%;
+    display: flex;
+    font-size: larger;
+    align-items: center;
   }
-  .photo-pub { grid-area: photo-pub; }
-  
-  .photo-desc {
-    justify-self: stretch;
-    grid-area: photo-desc;
-  } 
-  
-  .desc-pub { grid-area: desc-pub; }
-  
-  .schedule-pub { grid-area: schedule-pub; }
-  
-@media screen and (max-width: 900px) {
-    .txt-pub{width: 70%; font-size: medium;}
-    .title-beer-second-schedule{font-size: x-large;}
 }
-@media screen and (max-width: 600px) {
-    .txt-pub {width: 70%;font-size: medium;}
-    .title-beer-second-schedule{font-size: large;}
-} */
