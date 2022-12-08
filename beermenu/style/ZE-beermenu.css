@@ -1,94 +1,86 @@
 .table-beermenu td {
-    border-radius: 1px;
-    font-size: small;
+  border-radius: 1px;
+  font-size: small;
 }
-.NAME_beer{
-    font-size: x-large;
-    text-align: left;
+.NAME_beer {
+  font-size: x-large;
+  text-align: left;
 }
-.desc_beer{
-    font-size: large;
-    text-align: justify;
-    padding: 15px;
+.desc_beer {
+  font-size: large;
+  text-align: justify;
+  padding: 15px;
 }
-.menum a{
-    text-decoration: none;
-    color: black;
+.menum a {
+  text-decoration: none;
+  color: black;
 }
 .table-beermenu {
-    border: 1px solid #333;
-    border-radius: 1px;
-    font-size: small;
-    display: inline-flex;
-    color:white;
-    margin-bottom:2em;
-    width: 19%;
-    background-color: rgba(218, 165, 32, 0.9);
+  border: 1px solid #333;
+  border-radius: 1px;
+  font-size: small;
+  display: inline-flex;
+  color: white;
+  margin-bottom: 2em;
+  width: 19%;
+  background-color: rgba(218, 165, 32, 0.9);
 }
 .table-beermenu img {
-    height: 170px;
+  height: 170px;
 }
-.tr_img{
-    height: 170px;
+.tr_img {
+  height: 170px;
 }
-@media (max-width: 1580px){  
-    .desc_beer {
-        font-size: medium;
-    }
-    .NAME_beer{
-        font-size: large;
-    }
+@media (max-width: 1580px) {
+  .desc_beer {
+    font-size: medium;
+  }
+  .NAME_beer {
+    font-size: large;
+  }
 }
-@media (max-width: 1228px){  
-    .desc_beer {
-        font-size: small;
-    }
-    .NAME_beer{
-        font-size: medium;
-    }
+@media (max-width: 1228px) {
+  .desc_beer {
+    font-size: small;
+  }
+  .NAME_beer {
+    font-size: medium;
+  }
 }
-@media (max-width: 1000px){  
-    .menum {
-        font-size: small;
-    }
-    .desc_beer {
-        font-size: x-small;
-    }
-    .NAME_beer{
-        font-size: small;
-    }
-    table {
-        margin-bottom:1em;
-            width: 49%;
-        }
+@media (max-width: 1000px) {
+  .menum {
+    font-size: small;
+  }
+  .desc_beer {
+    font-size: x-small;
+  }
+  .NAME_beer {
+    font-size: small;
+  }
 }
 
-@media (max-width: 500px) {  
-    .menum {
-        font-size: x-small;
-    }
-    .menum li:hover {
-        transition: 0.3s ease;
-        letter-spacing: 1px;
-    }
-    table {
-    margin-bottom:1em;
-        width: 99%;
-    }
+@media (max-width: 500px) {
+  .menum {
+    font-size: x-small;
+  }
+  .menum li:hover {
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+  }
 }
 .link {
-    text-decoration: none;
-    color: #fff;
-    list-style:none;
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
 }
 .menum {
- text-decoration: none;
- color:black;
- list-style:none;
- display: flex;
- justify-content: center;
- background-color: white;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 .menum li {
- padding: 5px 14px;
+  padding: 5px 14px;
 }

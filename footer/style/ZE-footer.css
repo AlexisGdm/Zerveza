@@ -3,75 +3,76 @@
   height: 200px;
   bottom: 0;
   padding: 1rem;
-  color :white;
+  color: white;
   display: flex;
   align-items: center;
   align-content: flex-end;
   flex-wrap: wrap;
-  background: #ffd825 url("../../assets/img/background/bg-footer.png") repeat-x top center;
-  }
-.iconres{
+  background: #ffd825 url("../../assets/img/background/bg-footer.png") repeat-x
+    top center;
+}
+.iconres {
   text-align: right;
 }
-.footer a{
+.footer a {
   text-decoration: none;
   color: #fff;
 }
-.health{
+.health {
   text-align: center;
-} 
+}
 .iconr {
   max-width: 7%;
   margin-left: 10px;
   margin-right: 10px;
 }
 .pres {
-  width:33.33%;
+  width: 33.33%;
   display: inline-block;
   margin-right: -0.25em;
   vertical-align: middle;
 }
-.clear { 
-  clear: both; 
-  height: 250px; 
+.clear {
+  clear: both;
+  height: 250px;
 }
-@media only screen and (max-width: 1472px){
-    .iconr{
-        max-width: 8%;
-    }
-  } 
-@media only screen and (max-width: 934px){
-  .iconr{
-      max-width: 15%;
+@media only screen and (max-width: 1472px) {
+  .iconr {
+    max-width: 8%;
   }
-} 
-@media only screen and (max-width: 758px){
-  .iconr{
-  max-width: 10%;
+}
+@media only screen and (max-width: 934px) {
+  .iconr {
+    max-width: 15%;
   }
-} 
-@media only screen and (max-width: 600px){
-  .iconr{
-   max-width: 12%;
+}
+@media only screen and (max-width: 758px) {
+  .iconr {
+    max-width: 10%;
   }
-  .footer{
-   font-size:smaller;
+}
+@media only screen and (max-width: 600px) {
+  .iconr {
+    max-width: 12%;
   }
-  .footernotice{
-   width: 24%;
+  .footer {
+    font-size: smaller;
   }
-  .health{
-   width: 24%;
+  .footernotice {
+    width: 24%;
   }
-  .iconres{
-   width: 52%;
+  .health {
+    width: 24%;
   }
-} 
-@media only screen and (max-width: 450px){
-  .iconr{
-      max-width: 10%;
+  .iconres {
+    width: 52%;
   }
-  .footer{
+}
+@media only screen and (max-width: 450px) {
+  .iconr {
+    max-width: 10%;
+  }
+  .footer {
     font-size: xx-small;
   }
 }
