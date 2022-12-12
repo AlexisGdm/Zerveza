@@ -3,9 +3,6 @@ $login = new Login;
 $login->authorize();
 ?>
 
-<div class="remove-beer mb-3">
-    <h4>Supression d'une bière</h4>
-</div>
 <div class="remove-beer">
     <form method="GET" action="//Zerveza/admin-remove/">
 
@@ -26,6 +23,9 @@ $login->authorize();
         </div>
     </form>
     <!-- SELECT beer -->
+    <div class="remove-beer mb-3">
+    <h4>Supression d'une bière</h4>
+</div>
     <form method="GET" action="//Zerveza/admin-remove-2">
         <div class="mb-3">
             <label for="genreselect2" class="form-labeladmin">Selectionne une bière</label>
@@ -40,10 +40,27 @@ $login->authorize();
             </select>
         </div>
         <div class="mb-3">
-            <button type="submit" class="btn btn-primary">SUPPRIMER</button>
+            <button type="submit" class="btn btn-primary" name="delete-beer-button">Supprimer</button>
+        </div>
+    </form>
+    <div class="remove-beer mb-3">
+    <h4>Mise à jour d'une bière</h4>
+</div>
+    <form method="GET" action="//Zerveza/admin-remove-2">
+        <div class="mb-3">
+            <label for="genreselect2" class="form-labeladmin">Selectionne une bière</label>
+            <select class="form-select" id="choix2" name="choix2">
+                <?php
+                foreach ($results2 as $catbeer2) {
+                ?>
+                    <option value="<?= $catbeer2->ID_beer ?>"> <?= $catbeer2->NAME_beer ?></option>
+                <?php
+                }
+                ?>
+            </select>
         </div>
         <div class="mb-3">
-            <button type="button"><a href="//Zerveza/admin-remove">Annuler</a></button>
+            <button type="submit" class="btn btn-primary" name="delete-beer-button">Mettre à jour</button>
         </div>
     </form>
 </div>

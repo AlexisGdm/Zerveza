@@ -2,8 +2,8 @@
 $login = new Login;
 $login->authorize();
 ?>
-<div class="show-resa-title-beer-second">
-    <h4>Voici le détail de la reservation n° : <?= $id_resa ?></h4>
+<div class="show-resa">
+    <h4 id="resa-detail">Voici le détail de la reservation n° : <?= $id_resa ?></h4>
 </div>
 <div class="show-resa">
     <table>
@@ -43,4 +43,3 @@ $login->authorize();
         <button type="button"><a href="//Zerveza/admin-resa">Retourner a la liste</a></button>
     </div>
 </form>
-</div>

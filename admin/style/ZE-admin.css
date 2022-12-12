@@ -1,13 +1,16 @@
-.add-beer, .show-resa, .mb-3, .connectadmin  {
-    color: black;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
+.add-beer,
+.show-resa,
+.mb-3,
+.connectadmin {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
-.form-labeladmin{
-    padding-right: 20px;
+.form-labeladmin {
+  padding-right: 20px;
 }
-.adminform p{
-    color: black;
-    text-align: center;
+.adminform p {
+  color: black;
+  text-align: center;
 }
