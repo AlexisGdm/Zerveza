@@ -2,7 +2,7 @@
 
 ![Homepage](assets/img/background/zerveza_homepage_.png?raw=true "Optional Title")
 
-Site vitrine pour présenter un bar à bière (fictif).
+## Site vitrine pour présenter un bar à bière (fictif).
 Fait avec HTML, CSS, Javascript et PHP (jQuery est utilisé pour gérer le popup qui demande l'age de l'utilisateur).
 
 L'utilisateur peut consulter les bières propsées sur places, envoyer un message au propriétaire du bar et aussi retrouver toutes les informations pratiques (horaires et adresse avec carte google).
